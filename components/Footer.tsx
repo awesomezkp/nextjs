@@ -2,7 +2,7 @@ import * as React from 'react'
 
 import { FaEnvelopeOpenText } from '@react-icons/all-files/fa/FaEnvelopeOpenText'
 import { FaGithub } from '@react-icons/all-files/fa/FaGithub'
-import { FaLinkedin } from '@react-icons/all-files/fa/FaLinkedin'
+import { FaTelegram } from '@react-icons/all-files/fa/FaTelegram'
 import { FaMastodon } from '@react-icons/all-files/fa/FaMastodon'
 import { FaTwitter } from '@react-icons/all-files/fa/FaTwitter'
 import { FaYoutube } from '@react-icons/all-files/fa/FaYoutube'
@@ -35,7 +35,7 @@ export const FooterImpl: React.FC = () => {
 
   return (
     <footer className={styles.footer}>
-      <div className={styles.copyright}>Copyright 2022 {config.author}</div>
+      <div className={styles.copyright}>Copyright 2023 {config.author}</div>
 
       <div className={styles.settings}>
         {hasMounted && (
@@ -99,15 +99,15 @@ export const FooterImpl: React.FC = () => {
           </a>
         )}
 
-        {config.linkedin && (
+        {config.telegram && (
           <a
-            className={styles.linkedin}
-            href={`https://www.linkedin.com/in/${config.linkedin}`}
-            title={`LinkedIn ${config.author}`}
+            className={styles.telegram}
+            href={`https://t.me/${config.telegram}`}
+            title={`Telegram ${config.author}`}
             target='_blank'
             rel='noopener noreferrer'
           >
-            <FaLinkedin />
+            <FaTelegram />
           </a>
         )}
 
